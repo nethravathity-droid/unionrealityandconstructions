@@ -7,7 +7,6 @@ import LandFeatures from "../components/LandFeatures";
 import PlotAmenities from "../components/PlotAmenities";
 import LocationAdvantages from "../components/LocationAdvantages";
 import PlotHighlight from "../components/PlotHighlights";
-import PlotHighlight from "../components/PlotHighlights";
 
 export default function ServicesPage() {
   return (
