@@ -1,4 +1,18 @@
 import SubscribeForm from "./SubscribeForm";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaLinkedinIn,
+  FaYoutube,
+} from "react-icons/fa";
+import { socialLinks } from "../config/socialLinks";
+
+const iconMap = {
+  facebook: FaFacebookF,
+  instagram: FaInstagram,
+  linkedin: FaLinkedinIn,
+  youtube: FaYoutube,
+};
 
 export default function Footer() {
   return (
@@ -109,6 +123,24 @@ export default function Footer() {
             submitLabel="Send"
             inputPlaceholder="Enter Email"
           />
+
+          <div className="flex items-center gap-4 mt-6">
+            {socialLinks.map(({ name, href, icon }) => {
+              const Icon = iconMap[icon];
+              return (
+                <a
+                  key={name}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={name}
+                  className="w-11 h-11 rounded-full border border-white/10 bg-[#0b223f] text-gray-400 flex items-center justify-center text-lg hover:bg-[#d4a437] hover:text-black hover:border-[#d4a437] duration-300"
+                >
+                  <Icon />
+                </a>
+              );
+            })}
+          </div>
 
         </div>
 
