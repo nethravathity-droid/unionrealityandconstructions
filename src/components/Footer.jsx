@@ -1,3 +1,5 @@
+import SubscribeForm from "./SubscribeForm";
+
 export default function Footer() {
   return (
     <footer className="relative bg-[#03142b] border-t border-white/10 px-6 lg:px-20 py-16 overflow-hidden">
@@ -99,26 +101,14 @@ export default function Footer() {
           </h2>
 
           <p className="text-gray-400 leading-8">
-
             Subscribe for latest updates and premium project launches.
-
           </p>
 
-          <div className="mt-6 flex">
-
-            <input
-              type="email"
-              placeholder="Enter Email"
-              className="w-full bg-[#0b223f] border border-white/10 rounded-l-full px-6 py-4 text-white outline-none"
-            />
-
-            <button className="bg-[#d4a437] px-8 rounded-r-full font-semibold">
-
-              Send
-
-            </button>
-
-          </div>
+          <SubscribeForm
+            layout="footer"
+            submitLabel="Send"
+            inputPlaceholder="Enter Email"
+          />
 
         </div>
 
