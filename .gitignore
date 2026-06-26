@@ -12,6 +12,9 @@ dist
 dist-ssr
 *.local
 
+# Contact form submissions
+server/data/contacts.json
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

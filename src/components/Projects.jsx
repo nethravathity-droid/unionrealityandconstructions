@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const projects = [
   {
@@ -66,11 +67,12 @@ export default function Projects() {
 
         </div>
 
-        <button className="border border-white/20 text-white px-8 py-4 rounded-full hover:bg-[#d4a437] hover:text-black duration-300">
-
+        <Link
+          to="/project"
+          className="border border-white/20 text-white px-8 py-4 rounded-full hover:bg-[#d4a437] hover:text-black duration-300"
+        >
           VIEW ALL PROJECTS
-
-        </button>
+        </Link>
 
       </div>
 

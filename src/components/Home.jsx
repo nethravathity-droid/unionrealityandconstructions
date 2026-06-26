@@ -13,7 +13,7 @@ import PlotFaq from "./PlotFaq";
 import PropertyComparasion from "./PropertyComparison";
 import PropertyTabs from "./PropertyTabs";
 import Scrolling from "./ScrollingText";
-import test from "./Testimonial";
+import Testimonial from "./Testimonial";
 import Trusted from "./TrustedPartners";
 import PropertyShowcase from "./PropertyShowcase";
 
@@ -31,7 +31,7 @@ export default function HomePage() {
 <PropertyShowcase/>
 <PropertyTabs/>
 <Scrolling/>
-<test/>
+<Testimonial/>
 <Trusted/>
 
       {/* Sections */}

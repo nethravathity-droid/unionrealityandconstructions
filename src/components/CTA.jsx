@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import ContactButton from "./ContactButton";
 
 export default function CTA() {
   return (
@@ -41,17 +42,17 @@ export default function CTA() {
           {/* BUTTONS */}
           <div className="flex flex-wrap items-center justify-center gap-6 mt-12">
 
-            <button className="bg-[#d4a437] hover:bg-[#bc902d] duration-300 text-black font-semibold px-10 py-5 rounded-full">
+            <ContactButton className="bg-[#d4a437] hover:bg-[#bc902d] duration-300 text-black font-semibold px-10 py-5 rounded-full">
 
               GET STARTED →
 
-            </button>
+            </ContactButton>
 
-            <button className="border border-white/20 text-white hover:bg-white hover:text-black duration-300 px-10 py-5 rounded-full">
+            <ContactButton className="border border-white/20 text-white hover:bg-white hover:text-black duration-300 px-10 py-5 rounded-full">
 
               CONTACT US
 
-            </button>
+            </ContactButton>
 
           </div>
 

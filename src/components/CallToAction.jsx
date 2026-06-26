@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import ContactButton from "./ContactButton";
 
 export default function CallToAction() {
   return (
@@ -61,17 +62,17 @@ export default function CallToAction() {
           {/* BUTTONS */}
           <div className="flex flex-wrap justify-center gap-6 mt-14">
 
-            <button className="bg-[#d4a437] hover:bg-[#bc902d] duration-300 text-black font-semibold px-10 py-5 rounded-full">
+            <ContactButton className="bg-[#d4a437] hover:bg-[#bc902d] duration-300 text-black font-semibold px-10 py-5 rounded-full">
 
               Book Site Visit →
 
-            </button>
+            </ContactButton>
 
-            <button className="border border-white/20 hover:bg-white hover:text-black duration-300 text-white px-10 py-5 rounded-full">
+            <ContactButton className="border border-white/20 hover:bg-white hover:text-black duration-300 text-white px-10 py-5 rounded-full">
 
               Contact Sales Team
 
-            </button>
+            </ContactButton>
 
           </div>
 
